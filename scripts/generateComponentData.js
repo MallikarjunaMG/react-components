@@ -39,7 +39,7 @@ function getComponentData(paths, componentName) {
     description: info.description,
     props: info.props,
     code: content,
-    exmaples: getExamplesData(paths.examples, componentName)
+    examples: getExamplesData(paths.examples, componentName)
   }
 }
 
@@ -60,7 +60,7 @@ function getExamplesData(examplesPath, componentName) {
 function getExampleFiles(examplesPath, componentName) {
   let exampleFiles = [];
   try{
-    exampleFiles = getExampleFiles(path.join(examplesPath, componentName));
+    exampleFiles = getFiles(path.join(examplesPath, componentName));
   } catch(error){
     console.log(chalk.red(`No examples found for ${componentName}`));
   }
@@ -75,7 +75,7 @@ function getDirectories(filePath) {
 
 function getFiles(filepath) {
   return fs.readdirSync(filepath).filter(file => {
-    return fs.statSync(path.join(filePath, file)).isFile();
+    return fs.statSync(path.join(filepath, file)).isFile();
   })
 }
 
