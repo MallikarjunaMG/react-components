@@ -5,5 +5,6 @@ import TextInput from 'comps-root/TextInput';
  */
 export default function ExampleUsername() {
   return <TextInput htmlId='example-username' label='Username' 
-  name='username' required placeholder='Enter Username' onChange={() => {}} />
+  name='username' required placeholder='Enter Username' 
+  error='User is Required' onChange={() => {}} />
 }

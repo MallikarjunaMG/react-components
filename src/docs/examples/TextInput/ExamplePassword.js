@@ -5,5 +5,6 @@ import TextInput from 'comps-root/TextInput';
  */
 export default function ExamplePassword() {
   return <TextInput htmlId='example-password' label='Password' name='password'
-    placeholder='Enter Password' required type='password' onChange={() => { }} />
+    placeholder='Enter Password' required type='password' 
+    error='Passowrd is Required' onChange={() => { }} />
 }

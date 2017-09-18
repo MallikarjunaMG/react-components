@@ -35,7 +35,7 @@ TextInput.propTypes = {
   /** Input name */
   name: PropTypes.string.isRequired,
   /** Input type */
-  type: PropTypes.oneOf(['text', 'number', 'password']),
+  type: PropTypes.oneOf(['text', 'number', 'password', 'email']),
   /** Function to call onChange */
   onChange: PropTypes.func.isRequired,
   /** placeholder to display */
