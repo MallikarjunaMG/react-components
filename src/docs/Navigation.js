@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Navigation = ({components}) => {
   return (
-    <ul>
+    <ul className='navigation'>
       {
         components.map((name, idx) => {
           return <li key={idx}>

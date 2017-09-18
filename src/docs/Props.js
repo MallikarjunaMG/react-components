@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Props = ({props}) => {
   return (
     <div>
-      <table>
+      <table className='props'>
         <thead>
           <th>Name</th>
           <th>Description</th>
