@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+/**
+ * my custom progress-bar
+ */
 class ProgressBar extends React.Component {
   getColor = (percent) => {
     if(this.props.percent === 100) return 'green'

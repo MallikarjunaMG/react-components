@@ -10,7 +10,7 @@ const ComponentPage = ({component}) => {
       <h2>{name}</h2>
       <p>{description}</p>
 
-      <h3>Example {examples.length > 1 && 's'}</h3>
+      <h3>Example{examples.length > 1 && '\'s'}</h3>
       {
         examples.length > 0 ? 
         examples.map((example, idx) => <Example key={idx} example={example} componentName={name} />) :

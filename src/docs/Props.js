@@ -6,11 +6,13 @@ const Props = ({props}) => {
     <div>
       <table className='props'>
         <thead>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Type</th>
-          <th>Default</th>
-          <th>Required</th>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Default</th>
+            <th>Required</th>
+          </tr>
         </thead>
         <tbody>
           {
