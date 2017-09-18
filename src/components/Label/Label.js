@@ -13,8 +13,11 @@ const Label = ({htmlFor, label, required}) => {
 }
 
 Label.propTypes = {
+  /** htmlFor */
   htmlFor: PropTypes.string.isRequired,
+  /** label string */
   label: PropTypes.string.isRequired,
+  /** hightlight with asterisk if set to true */
   required: PropTypes.bool
 }
 export default Label

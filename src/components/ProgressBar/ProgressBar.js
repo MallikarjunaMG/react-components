@@ -28,8 +28,11 @@ class ProgressBar extends React.Component {
 }
 
 ProgressBar.propTypes = {
+  /** Percentage width */
   percent: PropTypes.number.isRequired,
+  /** width */
   width: PropTypes.number.isRequired,
+  /** static height */
   height: PropTypes.number
 }
 
