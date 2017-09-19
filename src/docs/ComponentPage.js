@@ -13,23 +13,23 @@ const ComponentPage = ({component}) => {
       <h3>Example{examples.length > 1 && '\'s'}</h3>
       {
         examples.length > 0 ? 
-        examples.map((example, idx) => <Example key={idx} example={example} componentName={name} />) :
+        examples.map(example => <Example key={example.name} example={example} componentName={name} />) :
         'No examples exists'
       }
 
       <h3>Props</h3>
       {
-        props?
+        props ?
         <Props props={props} /> :
         'This is component accepts no props'
       }
 
     </div>
   )
-}
+};
 
 ComponentPage.propTypes = {
   component: PropTypes.object.isRequired
-}
+};
 
 export default ComponentPage;
